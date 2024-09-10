@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Index - AgriCulture Bootstrap Template</title>
+    <title>Profile Website Dusun Kapingrejo</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <!-- <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -21,6 +21,9 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
@@ -141,48 +144,58 @@
       <!-- Sholat Section -->
       <div class="container mt-md-5 mt-3" style="width: 90%">
         <div class="row d-flex gap-2">
-          <div class="col-md-3 col-12 d-flex align-items-center text-light gap-2 py-3 py-md-0 justify-content-center justify-content-md-start" style="background-color: #2ea359">
-            <!-- Jam dalam bentuk SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="25" height="25" fill="white">
-              <!-- Outer Circle -->
-              <circle cx="50" cy="50" r="45" stroke="white" stroke-width="5" fill="none" />
+          <div class="col-md-3 col-12 d-flex flex-column align-items-center gap-2 text-light py-3 py-md-0 justify-content-center align-items-md-start" style="background-color: #2ea359">
+            <div class="d-flex gap-2">
+              <!-- Jam dalam bentuk SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="25" height="25" fill="white">
+                <!-- Outer Circle -->
+                <circle cx="50" cy="50" r="45" stroke="white" stroke-width="5" fill="none" />
 
-              <!-- Hour Hand -->
-              <line x1="50" y1="50" x2="50" y2="30" stroke="white" stroke-width="4" stroke-linecap="round" />
+                <!-- Hour Hand -->
+                <line x1="50" y1="50" x2="50" y2="30" stroke="white" stroke-width="4" stroke-linecap="round" />
 
-              <!-- Minute Hand -->
-              <line x1="50" y1="50" x2="70" y2="50" stroke="white" stroke-width="3" stroke-linecap="round" />
+                <!-- Minute Hand -->
+                <line x1="50" y1="50" x2="70" y2="50" stroke="white" stroke-width="3" stroke-linecap="round" />
 
-              <!-- Clock Center -->
-              <circle cx="50" cy="50" r="2" fill="white" />
-            </svg>
+                <!-- Clock Center -->
+                <circle cx="50" cy="50" r="2" fill="white" />
+              </svg>
 
-            <div class="fw-bold">Jadwal Sholat Kab. Sleman</div>
+              <div class="fw-bold">Jadwal Sholat Kab. Sleman</div>
+            </div>
+            <div class="d-flex gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#fafafa" viewBox="0 0 256 256">
+                <path
+                  d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"
+                ></path>
+              </svg>
+              <div class="fw-bold date"></div>
+            </div>
           </div>
 
           <div class="col-md col-12 border rounded d-flex flex-column align-items-center justify-content-center p-3" style="border-color: #2ea359 !important">
             <div>Subuh</div>
-            <div>18.00</div>
+            <div class="subuh-time">18.00</div>
           </div>
 
           <div class="col-md col-12 border rounded d-flex flex-column align-items-center justify-content-center p-3" style="border-color: #2ea359 !important">
             <div>Dzuhur</div>
-            <div>18.00</div>
+            <div class="dzuhur-time">18.00</div>
           </div>
 
           <div class="col-md col-12 border rounded d-flex flex-column align-items-center justify-content-center p-3" style="border-color: #2ea359 !important">
             <div>Ashar</div>
-            <div>18.00</div>
+            <div class="ashar-time">18.00</div>
           </div>
 
           <div class="col-md col-12 border rounded d-flex flex-column align-items-center justify-content-center p-3" style="border-color: #2ea359 !important">
             <div>Maghrib</div>
-            <div>18.00</div>
+            <div class="maghrib-time">18.00</div>
           </div>
 
           <div class="col-md col-12 border rounded d-flex flex-column align-items-center justify-content-center p-3" style="border-color: #2ea359 !important">
             <div>Isya</div>
-            <div>18.00</div>
+            <div class="isya-time">18.00</div>
           </div>
         </div>
       </div>
@@ -557,7 +570,7 @@
       </section>
       <!-- /Services Section -->
 
-      <!-- About Section -->
+      <!-- Potensi Dusun Section -->
       <section id="about" class="about section">
         <div class="content">
           <div class="container">
@@ -573,7 +586,7 @@
                   menghasilkan buah salak berkualitas tinggi yang memiliki rasa manis dan tekstur renyah yang disukai banyak orang.
                 </p>
 
-                <div class="row my-5">
+                <!-- <div class="row my-5">
                   <div class="col-lg-12 d-flex align-items-start mb-4">
                     <i class="bi bi-cloud-rain me-4 display-6"></i>
                     <div>
@@ -595,13 +608,21 @@
                       <p class="text-white opacity-50">Lorem ipsum dolor sit amet.</p>
                     </div>
                   </div>
-                </div>
+                </div> -->
+                <button type="button" class="btn btn-outline-warning d-flex gap-2 align-items-center" style="border-color: white !important">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fafafa" viewBox="0 0 256 256">
+                    <path
+                      d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"
+                    ></path>
+                  </svg>
+                  <div class="text-light">Whatsapp</div>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /About Section -->
+      <!-- /Potensi Dusun Section -->
 
       <!-- About 3 Section -->
       <section id="about-3" class="about-3 section">
@@ -1039,5 +1060,51 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      //Tanggal Sholat
+      // Mendapatkan elemen dengan class 'date'
+      const dateElement = document.querySelector(".date");
+
+      // Membuat objek tanggal saat ini
+      const currentDate = new Date();
+
+      // Mendapatkan hari, bulan, dan tahun dari objek tanggal
+      const day = String(currentDate.getDate()).padStart(2, "0"); // Memastikan dua digit
+      const month = String(currentDate.getMonth() + 1).padStart(2, "0"); // Bulan dimulai dari 0
+      const year = currentDate.getFullYear();
+
+      // Menggabungkan menjadi format yang diinginkan: DD/MM/YYYY
+      const formattedDate = `${day}/${month}/${year}`;
+
+      // Menyisipkan tanggal ke dalam elemen
+      dateElement.textContent = formattedDate;
+
+      //Jam Sholat
+      // Contoh koordinat Sleman, Yogyakarta
+      const latitude = -7.7156;
+      const longitude = 110.3555;
+      const apiUrl = `https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=2`;
+
+      fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          // Mengambil waktu sholat dari data API
+          const timings = data.data.timings;
+
+          // Menampilkan waktu sholat di elemen HTML
+          document.querySelector(".subuh-time").textContent = timings.Fajr;
+          document.querySelector(".dzuhur-time").textContent = timings.Dhuhr;
+          document.querySelector(".ashar-time").textContent = timings.Asr;
+          document.querySelector(".maghrib-time").textContent = timings.Maghrib;
+          document.querySelector(".isya-time").textContent = timings.Isha;
+
+          // Menampilkan tanggal
+          const currentDate = new Date();
+          const formattedDate = currentDate.toLocaleDateString("id-ID");
+          document.querySelector(".date").textContent = formattedDate;
+        })
+        .catch((error) => console.error("Error:", error));
+    </script>
   </body>
 </html>
