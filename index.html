@@ -150,8 +150,8 @@
             <div class="carousel-container">
               <h2>Tim KKN UNY 175368 Tahun 2024</h2>
               <p>
-                Tim KKN UNY melakukan  kegiatan di Dusun Kapingrejo yang di rancang dalam beragam program kerja, mulai dari kegiatan sosial, keagamaan, lingkungan, pembelajaran, teknologi, dan lain-lain.
-                Harapanya dengan adanya Tim KKN UNY ini dapat bermanfaat untuk Dusun Kapingrejo.
+                Tim KKN UNY melakukan kegiatan di Dusun Kapingrejo yang di rancang dalam beragam program kerja, mulai dari kegiatan sosial, keagamaan, lingkungan, pembelajaran, teknologi, dan lain-lain. Harapanya dengan adanya Tim KKN UNY
+                ini dapat bermanfaat untuk Dusun Kapingrejo.
               </p>
             </div>
           </div>
@@ -682,6 +682,38 @@
         </div>
       </section>
       <!-- /Potensi Dusun Section -->
+
+      <!-- Mengenal Section -->
+      <div class="container py-5" id="profildusun">
+        <div class="row align-items-center g-4">
+          <!-- Gambar Salak dengan AOS Fade-Right -->
+          <div class="col-md-6" data-aos="fade-right">
+            <img id="majelis2-image" src="assets/img/majelis2.jpg" alt="Pohon Salak" class="img-fluid rounded shadow-sm" style="transition: transform 0.3s ease-in-out" />
+          </div>
+
+          <!-- Konten Teks dengan AOS Fade-Left -->
+          <div class="col-md-6" data-aos="fade-left">
+            <div class="p-4 bg-white rounded shadow-sm">
+              <h2 class="text-success fw-bold mb-4">Yayasan Miftahul Huda Kapingrejo</h2>
+              <p class="text-justify" style="line-height: 1.7; font-size: 1.1em">
+                Yayasan Miftahul Huda Kapingrejo adalah sebuah lembaga pendidikan dan keagamaan yang berada di Dusun Kapingrejo, Sempu, Wonokerto, Turi, Sleman. Yayasan ini berfokus pada kegiatan pendidikan berbasis Islam, khususnya melalui
+                program Taman Pendidikan Al-Qur'an (TPA) dan pengajaran agama kepada anak-anak dan remaja di lingkungan sekitar. Selain itu, yayasan ini juga aktif dalam kegiatan sosial dan keagamaan seperti pengajian rutin, peringatan hari
+                besar Islam, serta kegiatan kemasyarakatan yang bertujuan untuk meningkatkan nilai-nilai keislaman di komunitas lokal.
+              </p>
+              <a href="https://www.instagram.com/kknuny.sempu24?igsh=ems4a2FiYnVmN2J3">
+                <button type="button" class="btn btn-success d-flex gap-2 align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fafafa" viewBox="0 0 256 256">
+                    <path
+                      d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"
+                    ></path>
+                  </svg>
+                  <div class="text-light">Whatsapp</div>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Donasi Masjid Section -->
       <section id="about-3" class="about-3 section">
@@ -1232,6 +1264,10 @@
       const salakImage = document.getElementById("salak-image");
       salakImage.addEventListener("mouseover", () => (salakImage.style.transform = "scale(1.05)"));
       salakImage.addEventListener("mouseout", () => (salakImage.style.transform = "scale(1)"));
+
+      const majelis2Image = document.getElementById("majelis2-image");
+      majelis2Image.addEventListener("mouseover", () => (majelis2Image.style.transform = "scale(1.05)"));
+      majelis2Image.addEventListener("mouseout", () => (majelis2Image.style.transform = "scale(1)"));
 
       //Tanggal Sholat
       // Mendapatkan elemen dengan class 'date'
