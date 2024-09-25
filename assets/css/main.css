@@ -2309,3 +2309,9 @@ section,
     font-size: 1em;
   }
 }
+
+/* Membuat canvas menyesuaikan lebar layar */
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
